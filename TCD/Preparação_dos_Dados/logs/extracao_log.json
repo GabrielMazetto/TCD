@@ -1,0 +1,48 @@
+[
+  {
+    "id_bloco": 1,
+    "origem_arquivo": "Lesson01.ipynb",
+    "origem_celulas": [
+      28,
+      29,
+      30,
+      31
+    ],
+    "descricao_bloco": "dyyfyyfg",
+    "filtros": {
+      "e_essencial": "S",
+      "e_generalizavel": "S",
+      "nao_e_trivial": "S"
+    },
+    "status": "Aprovado para adaptação"
+  },
+  {
+    "id_bloco": 2,
+    "origem_arquivo": "origem",
+    "origem_celulas": [
+      22
+    ],
+    "descricao_bloco": "odoos",
+    "filtros": {
+      "e_essencial": "S",
+      "e_generalizavel": "S",
+      "nao_e_trivial": "S"
+    },
+    "status": "Aprovado para adaptação"
+  },
+  {
+    "id_bloco": 3,
+    "origem_arquivo": "Lesson01.ipynb",
+    "origem_celulas": [
+      28,
+      29
+    ],
+    "descricao_bloco": "ufufuf",
+    "filtros": {
+      "e_essencial": "S",
+      "e_generalizavel": "S",
+      "nao_e_trivial": "S"
+    },
+    "status": "Aprovado para adaptação"
+  }
+]
