@@ -1,0 +1,44 @@
+Assistente de Análise de Dados com LLM (TCD)
+
+Este projeto é uma aplicação web interativa, desenvolvida com Streamlit e Python, que auxilia usuários em tarefas de análise e exploração de dados. A aplicação utiliza a API do Google Gemini para planejamento e geração de código, garantindo 100% de privacidade ao processar todos os dados do usuário localmente.
+
+Arquitetura
+
+Conforme definido na proposta do projeto, a arquitetura é dividida em três componentes:
+
+Frontend (app.py): Interface do usuário construída com Streamlit. Permite upload de dataset, interação com o LLM, visualização do plano de análise e aprovação de código.
+
+Backend (src/backend.py): O orquestrador local. Gerencia o estado, gera metadados do dataset, interage com o cliente Gemini e executa o código aprovado pelo usuário.
+
+Base de Conhecimento (data/kb.jsonl): Um arquivo JSONL contendo funções Python pré-aprovadas que o LLM usa como referência para gerar código seguro e testado.
+
+Cliente Gemini (src/gemini_client.py): Módulo responsável por formatar os prompts e interagir com a API do Google Gemini.
+
+Como Executar
+
+Crie um Ambiente Virtual:
+
+python -m venv venv
+source venv/bin/activate  # No Windows: venv\Scripts\activate
+
+
+Instale as Dependências:
+
+pip install -r requirements.txt
+
+
+Configure sua Chave de API:
+Crie um arquivo .env na raiz do projeto e adicione sua chave da API do Google Gemini:
+
+GEMINI_API_KEY=SUA_CHAVE_API_AQUI
+
+
+O aplicativo carregará essa variável de ambiente.
+
+Execute o Streamlit:
+
+streamlit run app.py
+
+
+Acesse no Navegador:
+Abra o endereço http://localhost:8501 no seu navegador.
